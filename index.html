@@ -1,9 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhenda ZHANG</title>
+  <style>
+    /* === Simple, clean academic one–pager style === */
+    :root {
+      --max-width: 900px;
+      --accent: #003366; /* KU Leuven‑ish blue */
+      --font-body: "Georgia", "Times New Roman", serif;
+      --font-heading: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: #fafafa;
+      display: flex;
+      justify-content: center;
+    }
+    main {
+      max-width: var(--max-width);
+      padding: 2rem 1rem 4rem;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      line-height: 1.55;
+    }
+    h1, h2, h3 {
+      font-family: var(--font-heading);
+      color: var(--accent);
+      margin-top: 2rem;
+      margin-bottom: .5rem;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0 2rem;
+    }
+    nav button {
+      border: 1px solid #ccc;
+      padding: .4rem 1.2rem;
+      background: #f8f8f8;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    nav button:hover {
+      background: #e0e0e0;
+    }
+    nav button + button { border-left: none; }
 
+    section {
+      margin-bottom: 3rem;
+    }
+    ul { margin-top: .2rem; }
+    img.figure {
+      display: block;
+      max-width: 200px;
+      margin: 1rem 0;
+      border: 1px dashed #e08040; /* placeholder border like screenshot */
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* small screens */
+    @media(max-width: 600px){
+      nav { flex-direction: column; align-items: center; }
+      nav button { margin-bottom: .4rem; width: 100%; }
+    }
+  </style>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  
+</head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-</body>
+  <main>
+    <h1>Zhenda ZHANG</h1>
 
+    <p>Hello World.</p>
+    <ul>
+      <li><code>name.lastname@esat.kuleuven.be</code></li>
+    </ul>
+    <p>您可以在这里找到我的简历并申请。</p>
+
+    <!-- === NAVIGATION TABS (non‑functional placeholder buttons) ===
+    <nav>
+      <button>Research</button>
+      <button>Publications</button>
+      <button>Talks</button>
+    </nav> -->
+
+    <!-- === RESEARCH SECTION === -->
+    <section id="research">
+      <!-- <img class="figure" src="placeholder1.png" alt="figure placeholder"> -->
+
+      <h2>Cryptography</h2>
+      <p>Euler’s identity: $$ e^{i\\pi} + 1 = 0 $$</p>
+
+      <p>My main research program here:</p>
+      <ul>
+        <li>Specific one.</li>
+        <li>Specific two.</li>
+        <li>Specific three.</li>
+      </ul>
+
+    </section>
+  </main>
+</body>
 </html>
